@@ -5,12 +5,12 @@ syntax on
 
 set nocompatible
 filetype off
-set rtp+=~/.vim-pivotal/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=~/.vim/.bundle/Vundle.vim
+call vundle#begin('.bundle')
 
 Plugin 'gmarik/Vundle.vim'
 
-for bundle in [ '~/.vim-pivotal/vimrc.bundles', '~/.vim-pivotal/vimrc.ruby.bundles' ]
+for bundle in [ '~/.vim/vimrc.bundles', '~/.vim/vimrc.ruby.bundles' ]
   if filereadable(expand(bundle))
     execute "source " . expand(bundle)
   endif
@@ -20,7 +20,7 @@ call vundle#end()
 
 filetype plugin indent on
 
-for config in [ '~/.vim-pivotal/vimrc.config', '~/.vim-pivotal/vimrc.ruby.config' ]
+for config in [ '~/.vim/vimrc.config', '~/.vim/vimrc.ruby.config' ]
   if filereadable(expand(config))
     execute "source " . expand(config)
   endif
