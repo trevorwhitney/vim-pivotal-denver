@@ -1,5 +1,4 @@
 let mapleader = " "
-let maplocalleader = ";"
 
 syntax on
 
