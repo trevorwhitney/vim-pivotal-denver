@@ -13,3 +13,5 @@ file.
 
 In order to install the config, please make sure you have `ag`, a.k.a the silver searcher,
 installed on your machine.
+
+This configuration require vim 7.4 or later.
