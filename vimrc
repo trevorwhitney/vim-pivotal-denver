@@ -24,7 +24,10 @@ call vundle#end()
 
 filetype plugin indent on
 
-for config in [ '~/.vim/vimrc.config', '~/.vim/vimrc.ruby.config' ]
+for config in [ 
+      \ '~/.vim/vimrc.config', 
+      \ '~/.vim/vimrc.ruby.config',
+      \ '~/.vim/vimrc.localvimrc.config' ]
   if filereadable(expand(config))
     execute "source " . expand(config)
   endif
